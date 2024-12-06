@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+    app:
+        build:
+            context: . # Root directory
+            dockerfile: Dockerfile # Path to the combined Dockerfile
+        container_name: full_stack_app
+        ports:
+            - "5000:5000" # Expose Flask backend on port 5000
+            - "3000:3000" # Expose React frontend on port 3000
+        volumes:
+            - ./frontend/src:/app/frontend/src # Mount frontend source code for live reloads
+            - ./backend/src:/app/backend/src # Mount backend source code for live reloads
+        networks:
+            - app-network
+
+networks:
+    app-network:
+        driver: bridge

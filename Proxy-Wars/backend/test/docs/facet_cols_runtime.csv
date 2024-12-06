@@ -1,0 +1,12 @@
+Dataset,Removed Column,% of Dataset,Runtime
+titanic_train.csv,Survived,100,7.621450662612915
+titanic_train.csv,Sex,100,2.310713052749634
+titanic_train.csv,SibSp,100,2.090914726257324
+titanic_train.csv,Parch,100,2.1722185611724854
+titanic_train.csv,Fare,100,2.909867286682129
+titanic_train.csv,Embarked,100,2.570042848587036
+titanic_test.csv,Sex,100,1.680659294128418
+titanic_test.csv,SibSp,100,1.5276939868927002
+titanic_test.csv,Parch,100,1.5378739833831787
+titanic_test.csv,Fare,100,1.5203452110290527
+titanic_test.csv,Embarked,100,1.7090282440185547
